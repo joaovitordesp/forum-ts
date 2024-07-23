@@ -1,0 +1,11 @@
+.header{ 
+    background: var(--gray-800);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 0;  /*1rem = 16px*/
+}
+/* a extensao é .modules para se referir somente ao arquivo Header.jsx */
+
+.header img{
+    height: 2.25rem;
+}

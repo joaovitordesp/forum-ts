@@ -1,0 +1,22 @@
+.wrapper{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) { /** Responsividade de tela em mobile */
+    html {
+    /** O html interfere nas medidas REMs, e 87.5% se refere aos 16px que é 100%, 
+    nesse caso usamos 14px em % para não quebrar quando o usuario aumentar ou diminuir a fonte */
+      font-size: 87.5%; 
+    }
+  
+    .wrapper {
+      grid-template-columns: 1fr; /* quando nessa largura, deixar somente uma coluna*/
+    }
+  }
